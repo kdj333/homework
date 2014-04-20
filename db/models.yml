@@ -3,7 +3,9 @@ Dice:
   - number: integer
   - image: string
 
-
+Book:
+  - title: string
+  - author: string
 
 
 
