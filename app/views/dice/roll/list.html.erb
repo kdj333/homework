@@ -2,11 +2,11 @@
 
 <p><strong> First Die:</strong>
   <% die1 = Dice.read.sample %>
-  <p><ul><img src = <%= die1["image"] %>></p></ul>
+  <p><ul><%= die1["number"] %></p></ul>
 </p>
 
 <p><strong> Second Die: </strong>
   <% die2 = Dice.read.sample %>
-    <p><ul><img src = <%= die2["image"] %>></p></ul>
+    <p><ul><%= die2["number"] %></p></ul>
 </p>
 
