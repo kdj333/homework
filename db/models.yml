@@ -1,6 +1,9 @@
 
 Dice:
   - number: integer
+  - image: string
+
+
 
 
 

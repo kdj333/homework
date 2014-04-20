@@ -1,14 +1,12 @@
 <h1>Dice Roll</h1>
 
-<p><ul><strong> First Die:
+<p><strong> First Die:</strong>
   <% die1 = Dice.read.sample %>
-  <%= die1["number"] %>
-</strong></ul></p>
-
-<p><ul><strong> First Die:
-  <% die2 = Dice.read.sample %>
-  <%= die2["number"] %>
-
-    </strong>
-  </ul>
+  <p><ul><img src = <%= die1["image"] %>></p></ul>
 </p>
+
+<p><strong> Second Die: </strong>
+  <% die2 = Dice.read.sample %>
+    <p><ul><img src = <%= die2["image"] %>></p></ul>
+</p>
+
