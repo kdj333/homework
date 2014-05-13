@@ -1,0 +1,19 @@
+
+<p><b>Title:</b> <%= @book["title"] %> </p>
+
+<p><b>Price (USD):</b> <%= @book["price"] %> </p>
+
+<p><b>Average Star Rating:</b> <%= @book.average_rating %> </p>
+
+<p><b>List of Reviews:</b>
+
+  <% reviews = Review.where("book_id" => @book["id"]) %>
+
+  <ul>
+    <% reviews.each do |review| %>
+
+      <li><%= review["book_review"] %> </li>
+   <% end %>
+  </ul>
+
+</p>

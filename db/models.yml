@@ -6,6 +6,12 @@ Dice:
 Book:
   - title: string
   - author: string
+  - price: integer
+
+Review:
+  - book_id: integer
+  - rating: integer
+  - book_review: string
 
 
 

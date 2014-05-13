@@ -1,0 +1,19 @@
+<h1> Book List </h1>
+
+  <% editor_pick = Book.find_by("title" => "The Alchemist") %>
+
+  <p><b> Editor's Pick:</b> <%= link_to editor_pick.title, "/books/#{editor_pick.id}" %></p>
+
+    <table border="1"><td style="width:200px"><strong>Title</strong></td><td style="width:150px"><strong>Average Rating</strong></td></table>
+
+    <% @books.each do |book| %>
+
+      <table border="1">
+        <td style="width:200px"><%= link_to book.title, "/books/#{book.id}" %></td>
+        <td style="width:150px"><%= book.average_rating %></td>
+      </table>
+
+  <% end %>
+
+
+

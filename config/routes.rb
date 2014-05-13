@@ -2,6 +2,8 @@ Homework::Application.routes.draw do
 
 get "/dice/roll" => "dice/roll/list"
 
-get "/books/list" => "books/list/list"
+get "/books" => "books#index"
+
+get "/books/:id" => "books#show"
 
 end
